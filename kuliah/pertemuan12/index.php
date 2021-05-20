@@ -1,5 +1,9 @@
 <?php
 
+// ketika tombol cari diklik
+if (isset($_POST['cari'])) {
+  $mahasiswa = cari($_POST['keyword']);
+}
 session_start();
 
 if (!isset($_SESSION['login'])) {
